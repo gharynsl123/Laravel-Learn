@@ -20,4 +20,8 @@ class TaskController extends Controller
         // dd($input);
         return redirect('/task');
     }
+    public function detail($id){
+        $task = Task::find($id);
+        return view('task.detail', compact('task'));
+    }
 }
