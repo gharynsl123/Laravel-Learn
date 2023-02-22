@@ -47,5 +47,8 @@ Route::put('/taskupdate/{id}', 'TaskController@update');
 Route::get('/task/{id}', 'TaskController@detail');
 Route::get('/delete/{id}', 'TaskController@delete');
 
+Route::resource('/profile', 'ProfileController');
+Route::resource('/create', 'CreateController');
+
 Route::view('/admin', 'template.template');
 
